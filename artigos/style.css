@@ -179,7 +179,7 @@
     line-height: 1.7;
     color: var(--cor-texto-suave);
 }
-.artigos-rodape{
+.artigos-card-rodape{
     display: flex;
     align-items: center;
     justify-content: space-between;
