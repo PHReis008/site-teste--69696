@@ -1,39 +1,42 @@
-/* Variáveis CSS */
 
-:root {
+
+/* Variavéis CSS */
+
+:root{
     --cor-fundo: #fafaf8;
-    --cor-escuro: #0f0f0f;
+    --cor-escuro: #0F0F0F;
     --cor-texto: #1a1a1a;
-    --cor-text-suave: #555;
-    --cor-cinza:#888;
-    --cor-borda:#e8e8e4;
-    --cor-principal:#e85d26;
-    --cor-pricipal-clara:#fde8dc;
-    --cor-principal-hover:#cf4e1e;
-    --cor-sucesso:#22c55e;
-    --cor-erro:#ef4444;
-    --cor-aviso:#f59e0b;
-
+    --cor-texto-suave: #555;
+    --cor-cinza: #888;
+    --cor-borda: #e8e8e4;
+    --cor-principal: #e85d26;
+    --cor-principal-clara: #fde8dc;
+    --cor-principal-hover: #cf4e1e;
+    --cor-sucesso: #22c55e;
+    --cor-erro: #ef4444;
+    --cor-aviso: #f59e0b;
+    
     --fonte-titulo: serif;
-    --fonte-corpo:sans-serif;
+    --fonte-corpo: sans-serif;
 
-    --espaço-xs:4px;
-    --espaço-sm:8px;
-    --espaço-md: 16px;
-    --espaço-çg:24px;
-    --espaço-xl: 40px;
-    --espaço-2xl: 60px;
+    --espaco-xs: 4px;
+    --espaco-sm: 8px;
+    --espaco-md: 16px;
+    --espaco-lg: 24px;
+    --espaco-xl: 40px;
+    --espaco-2xl: 60px;
 
     --raio: 12px;
     --raio-sm: 8px;
     --raio-pilula: 100px;
 
-    --sombra-sm: 0 2px 8px rgba(0,0,0, 0.06);
-    --sombra-md: 0 4px 24px rgba(0,0,0, 0.1);
+    --sombra-sm: 0 2px 8px  rgba(0,0,0, 0.06);
+    --sombra-md: 0 4px 24px  rgba(0,0,0, 0.01);
     --sombra-lg: 0 12px 48px rgba(0,0,0, 0.14);
 
     --transicao: 0.25s ease;
 }
+
 /* Zerando os estilos do navegador */
 *{
     margin: 0;
@@ -48,7 +51,7 @@ html{
 body{
     font-family: var(--fonte-corpo);
     background-color: var(--cor-fundo);
-    color:var(--cor-texto);
+    color: var(--cor-texto);
     line-height: 1.6;
 }
 
@@ -56,24 +59,24 @@ ul{
     list-style: none;
 }
 
-a {
+a{
     text-decoration: none;
-    color: inherit
+    color: inherit;
 }
 
-/* Cabeçalho Global */
 
+
+/* Cabeçalho global */
 .cabecalho{
-    display:flex;
+    display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 20px 60px;
+    padding: 20px;
     background-color: var(--cor-fundo);
     border-bottom: 1px solid var(--cor-borda);
     position: sticky;
     top: 0;
     z-index: 100;
-
 }
 
 .logo{
@@ -81,39 +84,36 @@ a {
     font-size: 26px;
     color: var(--cor-texto);
     font-weight: 700;
+
 }
 
 .logo span{
-    color:var(--cor-principal);
-
+    color: var(--cor-principal);
 }
-
-.nav-bar{
+.navbar{
     display: flex;
     align-items: center;
     gap: 32px;
 }
-
 .nav-lista{
     display: flex;
-    align-items: center;
-    gap: 24px;
+    gap: 28px;
 }
+
 .nav-link{
     font-size: 15px;
     font-weight: 500;
-    color: var(--cor-text-suave);
+    color: var(--cor-texto-suave);
     transition: color var(--transicao);
 }
-
 .nav-link:hover{
     color: var(--cor-principal);
-}
 
+}
 /* Rodapé Global */
 .rodape{
-    background-color:var(--cor-escuro);
-    color:var(--cor-cinza);
+    background-color: var(--cor-escuro);
+    color: var(--cor-cinza);
     text-align: center;
     padding: 48px 20px;
     display: flex;
@@ -121,7 +121,6 @@ a {
     align-items: center;
     gap: 8px;
 }
-
 .rodape-container{
     display: grid;
     grid-template-columns: 1.8fr 0.9fr 0.9fr;
@@ -131,22 +130,23 @@ a {
     padding-bottom: 48px;
     border-bottom: 1.5px solid var(--cor-cinza);
 }
-
 .rodape-info{
     display: flex;
     flex-direction: column;
     align-items: flex-start;
+
 }
 .rodape-logo{
     font-family: var(--fonte-titulo);
     font-size: 28px;
     color: #fff;
     font-weight: 700;
-    display: flex;
+
 }
 
 .rodape-logo span{
     color: var(--cor-principal);
+
 }
 
 .rodape-sub{
@@ -160,7 +160,6 @@ a {
     align-items: center;
     gap: 16px;
 }
-
 .rodape-redes a{
     width: 38px;
     height: 38px;
@@ -181,25 +180,20 @@ a {
     border-color: var(--cor-principal);
     transform: translateY(-2px);
 }
-
 .rodape-links h4{
     font-size: 15px;
-    font-weight: 600px;
-    color: white;
-    display: center;
-    align-items: center;
-    justify-content: center;
+    color: #ffff;
+    font-weight: 600;
     letter-spacing: 1px;
+    text-transform: uppercase;
     margin-bottom: 20px;
-    
+
 }
-.rodape-links li{
-    font-size: 16px;
-    line-height: 2.5;
+
+.rodape-links ul{
     display: flex;
     flex-direction: column;
-    gap:12px;
-   
+    gap: 12px;
 }
 .rodape-links ul a{
     font-size: 14px;
@@ -208,5 +202,90 @@ a {
 }
 .rodape-links ul a:hover{
     color: var(--cor-principal);
-    
+}
+
+
+
+
+
+
+.campos-grupo{
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+}
+
+.campos-label{
+    font-size: 13px;
+    font-weight: 500;
+    color: var(--cor-texto-suave);
+    letter-spacing: 0.3px;
+}
+
+.campo-input{
+    width: 100%;
+    padding: 13px 16px;
+    border: 1.5px solid var(--cor-borda);
+    border-radius: var(--raio-sm);
+    font-size: 15px;
+    color: var(--cor-texto);
+    transition: all var(--transicao);
+    outline: none;
+}
+
+.campo-input:focus{
+    border-color: var(--cor-principal);
+    box-shadow: 0 0 10px 3px rgba(232, 93, 38, 0.25);
+}
+
+.campo-input::placeholder{
+    color:#b3b3b7;
+}
+
+/** Botões */
+
+.btn-primario{
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    background-color: var(--cor-principal);
+    color: #fff;
+    border: none;
+    padding: 14px 28px;
+    border-radius: var(--raio-pilula);
+    font-size: 15px;
+    transition: all var(--transicao);
+    cursor: pointer;
+}
+
+.btn-primario:hover{
+    background-color: var(--cor-principal-hover);
+    transform: translateY(-2px);
+}
+
+.btn-primario:active{
+    background-color: #772d12;
+    transform: translateY(2px);
+}
+
+    .btn-secundario{
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    background-color: transparent;
+    color:var(--cor-texto);
+    border: 1px solid var(--cor-borda);
+    padding: 14px 28px;
+    border-radius: var(--raio-pilula);
+    font-size: 15px;
+    transition: all var(--transicao);
+    cursor: pointer;
+}
+
+.btn-secundario:hover{
+    border-color: var(--cor-principal);
+    color: var(--cor-principal);
+    transform: translateY(-2px);
 }

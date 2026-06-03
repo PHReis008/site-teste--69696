@@ -1,0 +1,144 @@
+.login-pagina{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    min-height: 100vh;
+}
+.login-painel-esquerdo{
+    background-color: var(--cor-escuro);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 48px;
+    color: var(--cor-fundo);
+}
+.login-painel-esquerdo .logo{
+    color: var(--cor-fundo);
+}
+.linha-principal{
+    width: 48px;
+    height: 3px;
+    background: linear-gradient(to right,var(--cor-principal), transparent);
+    border-radius: 4px;
+    margin-bottom: var(--espaco-md);
+}
+.login-frase{
+    font-family: var(--fonte-titulo);
+    font-size: 48px;
+    line-height: 1.2;
+    color: var(--cor-fundo);
+}
+
+
+
+.login-frase span{
+    color: var(--cor-principal);
+}
+
+.login-rodape-painel{
+    font-size: 13px;
+    color: #555;
+}
+
+.fundo-pontos{
+    position: relative;
+    overflow: hidden;
+
+}
+
+.fundo-pontos::before{
+    content: '';
+    position: absolute;
+    inset: 0;
+    background-image: radial-gradient(circle, #ffffff38 1px, transparent 1px);
+    background-size: 28px 28px;
+    pointer-events: none;
+}
+
+.login-painel-direito{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 48px;
+    background-color: var(--cor-fundo);
+}
+
+.login-form-card{
+    width: 100%;
+    max-width: 400px;
+
+}
+
+.login-titulo{
+    font-family: var(--fonte-titulo);
+    font-size: 34px;
+    margin-bottom: var(--espaco-sm);
+}
+
+.login-subtitulo{
+    font-size: 15px;
+    color: var(--cor-texto-suave);
+    margin-bottom: var(--espaco-xl);
+
+}
+
+.login-form{
+    display: flex;
+    flex-direction: column;
+    gap: var(--espaco-md);
+}
+
+.login-esqueceu{
+    font-size: 13px;
+    color: var(--cor-principal);
+    text-align: right;
+    display: block;
+    transition: all var(--transicao);
+}
+.login-esqueceu:hover{
+    opacity: 0.5;
+}
+.login-btn-submit{
+    width: 100%;
+    margin-top: var(--espaco-sm);
+    padding: 15px;
+    font-size: 15px;
+}
+
+.login-cadastro-link{
+    text-align: center;
+    margin-top: var(--espaco-lg);
+    font-size: 14px;
+    color: var(--cor-texto-suave);
+}
+
+.login-cadastro-link a{
+    color: var(--cor-principal);
+    font-weight: 500;
+    transition: all var(--transicao);
+}
+
+.login-cadastro-link a:hover{
+    opacity: 0.5;
+}
+
+.card-brilho{
+    position: relative;
+    overflow: hidden;
+
+}
+.card-brilho::after{
+    content: '';
+    position: absolute;
+    top: -50%;
+    left: -50%;
+    width: 200%;
+    height: 200%;
+    background: radial-gradient(circle at top left, rgba(232, 93, 38, 0.075), transparent 60%);
+    opacity: 0;
+    transition: all var(--transicao);
+    pointer-events: none;
+}
+
+.card-brilho hover::after{
+    opacity: 1;
+}
